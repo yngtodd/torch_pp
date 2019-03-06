@@ -1,8 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-
 project(models)
-
 
 add_library(
     model_lib
@@ -13,11 +11,5 @@ add_library(
 target_include_directories(model_lib PUBLIC include)
 target_include_directories(model_lib PUBLIC src)
 target_link_libraries(model_lib)
-
 set_property(TARGET model_lib PROPERTY CXX_STANDARD 14)
-
-#target_include_directories(model_lib PUBLIC include)
-
-#set_property(TARGET model_lib PROPERTY CXX_STANDARD 14)
-#SET_TARGET_PROPERTIES(model_lib PROPERTIES LINKER_LANGUAGE CXX)
 target_link_libraries(model_lib "${TORCH_LIBRARIES}")
