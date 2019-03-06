@@ -4,8 +4,6 @@
 #include <mnist.hpp>
 
 int main() {
-    std::cout << "Hello World!" << std::endl;
-    //auto net = std::make_shared<mlp::MLP>();
     mlp::MLP net;
 
     mlp::print_parameters(net);
