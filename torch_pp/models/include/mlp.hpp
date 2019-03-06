@@ -28,7 +28,7 @@ namespace mlp {
     torch::nn::Linear fc1{nullptr}, fc2{nullptr}, fc3{nullptr};
   };
 
-  auto create_mlp();
+  void print_parameters(mlp::MLP net);
 
 }
 

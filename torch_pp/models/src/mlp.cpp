@@ -2,10 +2,11 @@
 
 namespace mlp {
 
-    auto create_mlp() 
+    void print_parameters(mlp::MLP net)
     {
-        auto net = std::make_shared<mlp::MLP>();
-        return net;
+        for (const auto& pair : net.named_parameters()) {
+            std::cout << pair.key() << ": " << pair.value() << std::endl;
+        }
     }
 
 }
