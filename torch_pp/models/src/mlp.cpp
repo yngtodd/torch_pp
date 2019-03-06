@@ -1,4 +1,4 @@
-#include <models/mlp.hpp>
+#include <mlp.hpp>
 
 namespace mlp {
 

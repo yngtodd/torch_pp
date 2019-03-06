@@ -1,6 +1,8 @@
 #ifndef _MLP_HPP_
 #define _MLP_HPP_
 
+#include <torch/torch.h>
+
 namespace mlp {
 
   // Define a new Module.

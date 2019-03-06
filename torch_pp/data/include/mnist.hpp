@@ -6,7 +6,7 @@
 
 namespace data {
 
-  auto load_mnist(string& path);
+  auto load_mnist(std::string& path);
 
 }
 
