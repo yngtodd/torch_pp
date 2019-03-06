@@ -10,6 +10,5 @@ add_library(
 
 target_include_directories(model_lib PUBLIC include)
 target_include_directories(model_lib PUBLIC src)
-target_link_libraries(model_lib)
 set_property(TARGET model_lib PROPERTY CXX_STANDARD 14)
 target_link_libraries(model_lib "${TORCH_LIBRARIES}")
